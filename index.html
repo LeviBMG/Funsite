@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fun Games!</h1>
+    </header>
+    <main>
+        <div class="game-card" onclick="startGame('ronaldo')">
+            <h2>Spend Ronaldo's Wealth</h2>
+            <p>Buy everything you can with Ronaldo's money!</p>
+        </div>
+        <div class="game-card" onclick="startGame('pudding')">
+            <h2>Pudding Clicker</h2>
+            <p>Make endless pudding!</p>
+        </div>
+        <div class="game-card" onclick="startGame('lifetime')">
+            <h2>What Happens While You're Here?</h2>
+            <p>See what happens in the world while you're visiting!</p>
+        </div>
+    </main>
+
+    <div id="game-screen" class="hidden">
+        <button class="back-button" onclick="goHome()">Back</button>
+        <div id="game-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
